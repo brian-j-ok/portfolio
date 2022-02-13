@@ -107,8 +107,8 @@ body {
 
 /* About Me Section Styling */
 .about-me div:first-child {
-  height: 300px;
-  width: 100%;
+  height: 40%;
+  width: 100vw;
   position: absolute;
   transform: skewY(-10deg);
   top: -10%;
@@ -121,7 +121,7 @@ body {
   margin: 3vh 4vw;
 
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   place-items: center;
 }
 
@@ -145,18 +145,27 @@ body {
 
 /* Media Query for Tablets */
 @media (min-width: 481px) and (max-width: 767px) {
-  
+
 }
 
 /* My Work */
+.my-work {
+  padding: 15px 30px;
+  background-color: #7d7d7d;
+}
+
 .project-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  place-items: center;
+  row-gap: 10px;
 }
 
 .project-card {
   width: 20vw;
+
+  background-color: #b47746;
 
   display: flex;
   flex-direction: column;
@@ -164,7 +173,8 @@ body {
 }
 
 .project-card img {
-  width: inherit;
+  width: 95%;
+  padding: 5px 5px;
 }
 
 .card-title {
