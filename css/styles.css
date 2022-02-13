@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* General */
 
 *, *::before, *::after {
   box-sizing: inherit;
+  font-family: 'Roboto Serif', sans-serif;
 }
 
 html {
@@ -20,8 +23,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: hsl(207, 44%, 49%);
   color: white;
+  border-bottom: 2px solid black;
 }
 
 .title {
@@ -47,7 +51,7 @@ body {
 }
 
 .navbar-links li:hover {
-  background-color: #555;
+  background-color: #7d7d7d;
 }
 
 .toggle-button {
@@ -68,7 +72,7 @@ body {
   border-radius: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .toggle-button {
     display: flex;
   }
@@ -102,56 +106,46 @@ body {
 }
 
 /* About Me Section Styling */
-.about-me {
-  height: 40vh;
-}
-
 .about-me div:first-child {
-  width: 100vw;
-  height: inherit;
-
-  background-color: blue;
-  box-shadow: -10px 3px black;
-
+  height: 300px;
+  width: 100%;
   position: absolute;
-  top: -10vh;
-
-  transform: skewY(-15deg);
-
+  transform: skewY(-10deg);
+  top: -10%;
   z-index: -10;
+
+  background-color: #b47746;
 }
 
 .about-me-container {
-  margin: 5vh 10vw;
-
-  border: solid;
-  border-width: 2px;
-  border-color: black;
+  margin: 3vh 4vw;
 
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   place-items: center;
-  gap: 1%;
 }
 
 .about-me-container img {
-  width: 125%;
-
-  grid-column: 1 / 2;
-  grid-row: 1 / 5;
+  max-width: 100%;
+  height: auto;
+  float: left;
 }
 
 .about-me-card {
-  padding-left: 20px;
-  background-color: red;
+  height: 75%;
+  padding: 15px 10px;
 
-  grid-row: 2 / 4;
+  background-color: lightslategrey;
+}
 
-  position: relative;
-  left: 10px;
+/* Media Query for Mobile Device */
+@media (max-width: 480px) {
 
-  z-index: -5;
+}
+
+/* Media Query for Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  
 }
 
 /* My Work */
