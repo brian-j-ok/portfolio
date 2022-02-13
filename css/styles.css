@@ -102,7 +102,57 @@ body {
 }
 
 /* About Me Section Styling */
+.about-me {
+  height: 40vh;
+}
 
+.about-me div:first-child {
+  width: 100vw;
+  height: inherit;
+
+  background-color: blue;
+  box-shadow: -10px 3px black;
+
+  position: absolute;
+  top: -10vh;
+
+  transform: skewY(-15deg);
+
+  z-index: -10;
+}
+
+.about-me-container {
+  margin: 5vh 10vw;
+
+  border: solid;
+  border-width: 2px;
+  border-color: black;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  gap: 1%;
+}
+
+.about-me-container img {
+  width: 125%;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+
+.about-me-card {
+  padding-left: 20px;
+  background-color: red;
+
+  grid-row: 2 / 4;
+
+  position: relative;
+  left: 10px;
+
+  z-index: -5;
+}
 
 /* My Work */
 .project-container {
